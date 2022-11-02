@@ -100,8 +100,6 @@ h1 {
 .container__items-plan div:first-child {
     width: 155px;
     display: flex;
-    flex-//wrap: wrap;
-    justify-con//tent: space-between;
     align-items: center;
 }
 
