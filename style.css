@@ -18,7 +18,7 @@
 --payment-hover: 	hsl(245, 83%, 68%);
 }
 
-/*Weights: 500, 700, 900*/   /*567*/
+/*Weights: 500, 700, 900*/   /*mobile: 327 x 567*/
 body, html {
     max-width: 100vw;
     min-height: 100vh;
@@ -55,6 +55,9 @@ main {
  height: 100%;
  border-top-left-radius: 15px;
  border-top-right-radius: 15px;
+}
+.container .illustration-mobile {
+    display: none;
 }
 
 .container__items {
@@ -179,3 +182,40 @@ h1 {
 
 
 
+@media (max-width: 450px) {
+
+    .container {
+        max-width: 327px;
+        margin: 30px;
+    }
+
+    .container .illustration {
+        display: none;
+    }
+       .container .illustration-mobile {
+           display: block;
+           width: 100%;
+           height: 100%;
+           border-top-left-radius: 15px;
+           border-top-right-radius: 15px;
+    }
+
+
+    .container__items {
+        padding: 20px 24px 24px 24px;
+    }
+
+
+    h1 {
+        font-size: 1.7188rem;
+        margin-bottom: 18.5px;
+    }
+
+    .container__items-plan {
+        width: 100%;
+        padding: 20px 10px;
+        margin-bottom: 32px;
+
+    }
+
+}
