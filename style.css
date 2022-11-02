@@ -14,13 +14,14 @@
 --desaturated-blue: hsl(224, 23%, 55%);
 --dark-blue: hsl(223, 47%, 23%);
 --white: hsl(0, 0%, 100%);
+--change-hover: hsl(243, 65%, 73%);
+--payment-hover: 	hsl(245, 83%, 68%);
 }
 
-/*Weights: 500, 700, 900*/   567
-
+/*Weights: 500, 700, 900*/   /*567*/
 body, html {
     max-width: 100vw;
-    min-height: 110vh;
+    min-height: 100vh;
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -33,8 +34,8 @@ body {
 }
 
 main {
-    max-width: 100vw;
-    min-height: 110vh;
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,14 +74,14 @@ h1 {
     font-weight: 900;
     letter-spacing: 0.5px;
     color: var(--dark-blue);
-    margin-bottom: 16.5px;
+    margin-bottom: 18.5px;
 }
 
 .container__items .description {
     font-size: 1rem;
     color: var(--desaturated-blue);
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
     margin-left: 1px;
     line-height: 25px;
 }
@@ -89,8 +90,8 @@ h1 {
     width: 100%;
     background-color: var(--very-pale-blue);
     border-radius: 10px;
-    padding: 20px 26px;
-    margin-bottom: 38px;
+    padding: 24px 26px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,8 +100,15 @@ h1 {
 .container__items-plan div:first-child {
     width: 155px;
     display: flex;
-    justify-content: space-between;
+    flex-//wrap: wrap;
+    justify-con//tent: space-between;
     align-items: center;
+}
+
+
+.container__items-plan div:first-child div:first-of-type{
+    margin-right: 17.77px;
+    width: 48px;
 }
 
 .container__items-plan div:first-child div:last-of-type {
@@ -108,11 +116,11 @@ h1 {
   flex-direction: column;
 }
 
-.container__items-plan div:last-child p {
+.container__items-plan div:first-child div:last-child p {
     font-size: 1rem;
     color: var(--dark-blue);
     font-weight: 700;
-    padding-bottom: 3.5px;
+    padding-bottom: 5.5px;
 }
 
 .container__items-plan div:last-child p + span {
@@ -121,8 +129,14 @@ h1 {
 }
 
 .container__items-plan div:last-child p > a {
-    font-size: .8438rem;
-  color: var(--bright-blue);   
+  font-size: .8438rem;
+  color: var(--bright-blue);  
+  font-weight: 900; 
+}
+
+.container__items-plan div:last-child p > a:hover {
+    color: var(--change-hover);
+    text-decoration: none;
 }
 
 .container__payment {
@@ -135,6 +149,12 @@ h1 {
     margin-bottom: 30.5px;
     font-weight: 700;
 }
+
+.container__payment:hover {
+    background-color: var(--payment-hover);
+    cursor: pointer;
+    border-color: hsl(250, 93%, 60%);
+  }
 
 .container__payment p > a {
   text-decoration: none;
@@ -150,13 +170,11 @@ h1 {
 .container__payment + p > a {
     text-decoration: none;
     color: var(--desaturated-blue);
+    font-weight: 700;
 }
 
-
-@media (max-width: 450px) {
-
-
-
+.container__payment + p > a:hover {
+   color: var(--dark-blue);
 }
 
 
