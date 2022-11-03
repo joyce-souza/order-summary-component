@@ -20,7 +20,6 @@
 
 /*Weights: 500, 700, 900*/   /*mobile: 327 x 567*/
 body, html {
-    max-width: 100vw;
     min-height: 110vh;
     font-family: 'Red Hat Display', sans-serif;
 }
