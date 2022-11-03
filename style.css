@@ -20,7 +20,7 @@
 
 /*Weights: 500, 700, 900*/   /*mobile: 327 x 567*/
 body, html {
-    min-height: 110vh;
+    min-height: 122vh;
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -35,7 +35,7 @@ body {
 
 main {
     width: 500px;
-    min-height: 110vh;
+    min-height: 122vh;
     display: flex;
     justify-content: center;
     align-items: center;
