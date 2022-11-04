@@ -19,23 +19,24 @@
 }
 
 /*Weights: 500, 700, 900*/   /*mobile: 327 x 567*/
-body, html {
-    min-height: 122vh;
+html {
+    height: 800px;
     font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
+    height: 100%;
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-color: var(--pale-blue);
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 main {
     width: 500px;
-    min-height: 122vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,6 +188,13 @@ h1 {
 
 @media (max-width: 450px) {
 
+    html {
+        height: 709px;
+    }
+
+    body, main {
+        height: 100%;
+    }
 
     .container {
         max-width: 327px;
