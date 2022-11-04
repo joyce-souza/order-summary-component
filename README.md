@@ -11,7 +11,7 @@ This is my solution to the Order summary component challenge on Frontend Mentor 
 
 ## Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/order-summary-component-AJ4YqUlZ6_
+- Solution URL: encurtador.com.br/dmuO3
 - Live Site URL: https://joyce-souza.github.io/order-summary-component/
 
 ## Built with
