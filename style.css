@@ -192,10 +192,6 @@ h1 {
         height: 709px;
     }
 
-    body, main {
-        height: 100%;
-    }
-
     .container {
         max-width: 327px;
 
